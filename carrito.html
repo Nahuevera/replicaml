@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cartShip.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Mercado Libre</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <header class="header">
+                <div class="container-logo">
+                    <img src="./img/logo.png" alt="logo" class="logo">
+                </div>
+                <div class="container-search">
+                    <div class="input">
+                        <input type="text" placeholder="Buscar productos, marcas y más...">
+                        <i class="bi bi-search icono-busqueda"></i>
+                    </div>
+                </div>
+                <div class="container-publicidad">
+                    <img src="./img/publicidad.png">
+                </div>
+                <div class="conteiner-ubicacion">
+                    <a href="#">
+                        <i class="bi bi-geo-alt"></i>
+                        <span class="txt-enviar">Enviar a </span>
+                        <span class="txt-lugar">Buenos Aires</span>
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html">
+                        Seguir comprando
+                    </a>
+                </div>
+                <div class="info-user">
+                    <a href="#">Crea tu cuenta</a>
+                    <a href="#">Ingresa</a>
+                    <a href="#">Mis compras</a>
+                    <a href="carrito.html">
+                        <i class="bi bi-cart icono-carrito"></i>
+                        <span class="num-en-carrito" id="num-en-carrito">0</span>
+                    </a>
+                </div>
+            </header>
+        </div>
+        <main>
+            <div class="container-carrito">
+                <p class="carrito-vacio" id="carrito-vacio">
+                    <i class="bi bi-cart"></i>
+                    carrito vacio - comience a comprar
+                </p>
+                <div class="carrito-productos disable" id="carrito-productos">
+                    <!-- Aquí se cargarán los productos -->
+                </div>
+                <div class="carrito-resumen-compra disable" id="resumen-carrito">
+                    <div class="carrito-resumen-titulo">
+                        <span>Resumen de compra</span>
+                    </div>
+                    <div class="carrito-resumen-total-compra item resumen">
+                        <span class="cantidad-productos-compra">Productos (<span class="num-total">0</span>)</span>
+                        <span class="precio-productos-compra" id="total-producto-compra">$0</span>
+                    </div>
+                    <div class="carrito-resumen-total-envio item-resumen">
+                        <span>Envio</span>
+                        <span class="carrito-resumen-precio-envio" id="total-envio">$0</span>
+                    </div>
+                    <div class="carrito-resumen-total-final item-resumen">
+                        <span>Total</span>
+                        <span class="precio-final" id="precio-final">$0</span>
+                    </div>
+                    <div class="item-resumen">
+                        <button class="carrito-acciones-compra">Continuar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>
